@@ -13,10 +13,11 @@
   border-bottom: 4px solid black;
 }
 
-h4 {
+h2 {
   margin-left: 50px;
   font-size: 40px;
   font-weight: bolder;
+  color: aquamarine;
 }
 
 .type {
