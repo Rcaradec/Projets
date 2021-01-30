@@ -11,7 +11,7 @@ btn.addEventListener("click", function () {
         hexColor += hex[getRandomNumber()];
     }
 
-    console.log(hexColor);
+    
 
     color.textContent = hexColor;
     document.body.style.backgroundColor = hexColor;
