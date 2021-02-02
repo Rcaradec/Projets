@@ -29,12 +29,12 @@ const reviews = [
   },
   {
     id: 4,
-    name: "bill anderson",
-    job: "the boss",
+    name: "Remi Caradec",
+    job: "Le Fondateur",
     img:
-      "https://res.cloudinary.com/diqqf3eq2/image/upload/v1586883423/person-4_t9nxjt.jpg",
+      "https://imagizer.imageshack.com/img923/8279/nxnRvX.jpg",
     text:
-      "Edison bulb put a bird on it humblebrag, marfa pok pok heirloom fashion axe cray stumptown venmo actually seitan. VHS farm-to-table schlitz, edison bulb pop-up 3 wolf moon tote bag street art shabby chic. ",
+      "Fondateur du site et mordu de Dev, sa soif de connaissance n'a aucune limite. N'hésitez pas à le contacter pour construire vos projets!",
   },
 ];
 
@@ -85,5 +85,13 @@ prevBtn.addEventListener('click', function () {
   if (currentItem < 0){
      currentItem = reviews.length -1 ;
   }
+  showPerson(currentItem);
+})
+
+
+// Random person 
+
+randomBtn.addEventListener('click', function () {
+currentItem = Math.floor(Math.random() * reviews.length)
   showPerson(currentItem);
 })

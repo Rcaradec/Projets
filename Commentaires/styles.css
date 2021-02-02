@@ -12,6 +12,13 @@ Variables
 */
 
 :root {
+  /*variables perso*/
+  --color-perso-1: #4ecdc4;
+  --color-perso-2: #556270;
+  --color-perso-3: #c7f464;
+  --color-perso-4: #ff6b6b;
+  --color-perso-5: #c44d58;
+
   /* dark shades of primary color*/
   --clr-primary-1: hsl(205, 86%, 17%);
   --clr-primary-2: hsl(205, 77%, 27%);
@@ -68,8 +75,8 @@ Global Styles
 }
 body {
   font-family: var(--ff-secondary);
-  background: var(--clr-grey-10);
-  color: var(--clr-grey-1);
+  background: var(--color-perso-2);
+  color: var(--color-perso-1);
   line-height: 1.5;
   font-size: 0.875rem;
 }
@@ -103,7 +110,7 @@ h4 {
 }
 p {
   margin-bottom: 1.25rem;
-  color: var(--clr-grey-5);
+  color: var(--color-perso-4);
 }
 @media screen and (min-width: 800px) {
   h1 {
@@ -168,7 +175,7 @@ main {
 .underline {
   height: 0.25rem;
   width: 5rem;
-  background: var(--clr-primary-5);
+  background: var(--color-perso-5);
   margin-left: auto;
   margin-right: auto;
 }
@@ -183,9 +190,11 @@ main {
   box-shadow: var(--light-shadow);
   transition: var(--transition);
   text-align: center;
+  box-shadow: inset 5px 5px 10px var(--color-perso-1),
+    inset -5px -5px 10px var(--color-perso-1);
 }
 .review:hover {
-  box-shadow: var(--dark-shadow);
+  box-shadow: var(--color-perso-1);
 }
 .img-container {
   position: relative;
@@ -216,14 +225,14 @@ main {
   place-items: center;
   border-radius: 50%;
   transform: translateY(25%);
-  background: var(--clr-primary-5);
-  color: var(--clr-white);
+  background: var(--color-perso-1);
+  color: var(--color-perso-4); /*guillemet bulle */
 }
 .img-container::before {
   content: "";
   width: 100%;
   height: 100%;
-  background: var(--clr-primary-5);
+  background: var(--color-perso-1);
   position: absolute;
   top: -0.25rem;
   right: -0.5rem;
@@ -235,7 +244,7 @@ main {
 #job {
   margin-bottom: 0.5rem;
   text-transform: uppercase;
-  color: var(--clr-primary-5);
+  color: var(--color-perso-1);
   font-size: 0.85rem;
 }
 #info {
@@ -243,7 +252,7 @@ main {
 }
 .prev-btn,
 .next-btn {
-  color: var(--clr-primary-7);
+  color: var(--color-perso-1);
   font-size: 1.25rem;
   background: transparent;
   border-color: transparent;
@@ -257,13 +266,13 @@ main {
 }
 .random-btn {
   margin-top: 0.5rem;
-  background: var(--clr-primary-10);
-  color: var(--clr-primary-5);
+  background: grgb(66, 66, 66);
+  color: var(--color-perso-1);
   padding: 0.25rem 0.5rem;
   text-transform: capitalize;
   border-radius: var(--radius);
   transition: var(--transition);
-  border-color: var(--clr-primary-5);
+  border-color: rgb(0, 0, 0);
   cursor: pointer;
 }
 .random-btn:hover {
